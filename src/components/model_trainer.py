@@ -52,7 +52,7 @@ class ModelTrainer:
             params={
                 "Random Forest":{
                     "n_estimators": [100, 200, 500, 600, 800, 900],
-                    "criterion": ['mse','mae'],
+                    "criterion": ['squared_error', 'absolute_error', 'friedman_mse', 'poisson'],
                     "max_depth": [None, 2, 3, 5, 7, 8],
                     "min_samples_split": [2, 5, 7, 9, 10],
                     "min_samples_leaf": [1, 2, 5, 7, 9, 10],
@@ -60,7 +60,7 @@ class ModelTrainer:
                 },
                 "Gradient Boosting":{
                     "n_estimators": [100, 200, 500, 600, 800, 900],
-                    "criterion": ['friedman_mse', 'mse', 'mae'],
+                    "criterion": ['friedman_mse', 'squared_error'],
                     "learning_rate": [0.05,0.10,0.15,0.20,0.25,0.30],
                     "max_depth": [None, 2, 3, 5, 7, 8],
                     "min_samples_split": [2, 5, 7, 9, 10],
