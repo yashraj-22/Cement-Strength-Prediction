@@ -1,4 +1,4 @@
-# Cement Strength Prediction
+# Concrete Compressive Strength Prediction
 
 ## Problem Statement
 The quality of cement is determined by its compressive strength, which is measured
@@ -50,4 +50,4 @@ AWS Elastic Beanstalk link: [http://cementstrengthpredictor-env-1.eba-a2i3wqzs.e
     * This pipeline converts given data into dataframe and has various functions to load pickle files and predict the final results in python.
 
 5. Flask App creation:
-    * Flask app is created with User Interface to predict the cement strength inside a Web Application.
+    * Flask app is created with User Interface to predict the concrete compressive strength inside a Web Application.
